@@ -3,12 +3,12 @@ set -ex
 VERSION=$TAG
 cd ${WORKSPACE}/DevOps_Project_1
 
-export AWS_PROFILE="euran_devops_project"
+export AWS_PROFILE="Anbunithi"
 
 echo $AWS_PROFILE
 
 whoami
-aws ecr get-login-password --region ap-south-1 | sudo docker login --username AWS --password-stdin "044967670847.dkr.ecr.ap-south-1.amazonaws.com"
+aws ecr get-login-password  --region us-east-1 | sudo docker login --username AWS --password-stdin "476224453880.dkr.ecr.us-east-1.amazonaws.com
 
 sudo docker build -t nginx-application .
 
